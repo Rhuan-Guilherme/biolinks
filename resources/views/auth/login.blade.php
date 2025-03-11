@@ -3,7 +3,11 @@
     Login
   </h1>
 
-  <div>
-    form
-  </div>
+  <form action="/login" method="post">
+    @csrf
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="senha">
+    <button type="submit">Logar</button>
+  </form>
+</div>
 </div>
